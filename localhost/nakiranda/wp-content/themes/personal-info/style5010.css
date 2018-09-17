@@ -1,0 +1,1178 @@
+/*
+Theme Name: Personal Info
+Theme URI: https://spiderbuzz.com/wordpress-themes/personal-info-wordpress-theme/
+Author: spiderbuzz 
+Author URI: http://spiderbuzz.com/
+Description: Personal Info WordPress theme is exquisiteness and simplicity helps individuals represent their personal site at ease. A must-have for all individuals looking to exhibit and brand one's personal information. Aided with control from Theme options, the Personal info theme's unique feature is to diaplsy home, contact, portfolio, profile and blogs. All these acquainted with robust in-house responsive framework would serve its purpose to benefit your Biography. Now you can import demo by one click. For more detail: https://spiderbuzz.com/wordpress-themes/personal-info-wordpress-theme/
+Version: 2.2.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: personal-info
+Tags:   custom-header, custom-background, custom-menu, translation-ready, featured-images, theme-options, custom-logo , portfolio, editor-style, right-sidebar, threaded-comments
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Personal Info by SpiderBuzz is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Personal Info is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}
+
+body {
+	margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden],
+template {
+	display: none;
+}
+
+a {
+	background-color: transparent;
+}
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub, sub-menu,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup, sub-menu {
+	top: -0.5em;
+}
+
+sub,sub-menu {
+	bottom: -0.25em;
+}
+
+img {
+	border: 0;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 1em 40px;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+pre {
+	overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+button {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input {
+	line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+}
+
+optgroup {
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+ {
+	
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 9px;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: #fff; /* Fallback for when there is no custom background color defined. */
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: #ccc #ccc #bbb;
+	border-radius: 3px;
+	background: #e6e6e6;
+	color: rgba(0, 0, 0, .8);
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1;
+	padding: .6em 1em .4em;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	border-color: #ccc #bbb #aaa;
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	border-color: #aaa #bbb #bbb;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+select {
+	border: 1px solid #ccc;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	color: #111;
+}
+
+textarea {
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+	color: royalblue;
+}
+
+a:visited {
+	color: #000000;
+}
+.footer{
+	text-align:center;
+}
+
+
+a:hover,
+a:focus,
+a:active {
+	color: midnightblue;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+}
+
+/* Make sure select elements fit in widgets. */
+.widget select {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published) {
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+
+
+
+.nav li a:hover{
+	text-decoration:none;
+}
+
+
+/* Blog */
+
+ .post{
+	position: relative;
+}
+
+ .blog_inner{
+	width: 75%;
+	float: left;
+}
+
+/* Blog Head */
+
+.blog-head{
+	width:100%;
+	height: auto;
+	padding:14px 10px;
+	margin-bottom: 20px;
+	color:#696969;
+	background:#f8f8f8;
+}
+
+/* Head For Inner Slider */
+
+.blog-head.inner-head{
+	margin-bottom:-100%;
+	background:transparent;
+	margin-bottom: auto;
+	color:#696969;
+	position: absolute;
+	z-index: 5;
+	color:white;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.blog-head.inner-head .blog-head-right h1{
+	margin-top:5px;
+}
+
+/* Blog Header Left Time Dates */
+
+.blog-head .blog-head-left{
+	width:90%;
+	max-width: 100px;
+	padding:0;
+	float: left;
+}
+
+.blog-head .blog-head-left h1{
+	margin:0;
+	padding:0;
+	color:inherit;
+}
+
+.blog-head .blog-head-left p{
+	margin: 0;
+	padding:0;
+	color:inherit;
+	font-size:19px;
+}
+
+/* Blog Header Right */
+
+ .post{
+	margin-bottom:45px;
+	padding-bottom:40px;
+	border-bottom:1px solid #f5f5f5;
+}
+
+ .post:last-child{
+	margin-bottom:0;
+}
+
+ .post .single_item{
+	margin-bottom:30px;
+}
+
+ .post .single_item a,
+ .post .single_item a img{
+	width: 100%;
+	height: auto;
+}
+
+.blog-head .blog-head-right{
+	width:auto;
+	padding:0 0 0 10px;
+	float: left;
+	display: block;
+	color:inherit;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.blog-head .blog-head-right:hover{
+	opacity: 0.9;
+}
+
+.blog-head .blog-head-right h1{
+	margin:0;
+	padding:0;
+	color:inherit;
+	font-size:31px;
+}
+
+.blog-head .blog-head-right p{
+	margin: 0;
+	padding:0;
+	color:inherit;
+	font-size:15px;
+}
+
+ .details .post-info{
+	width: 100%;
+	height: auto;
+	border-bottom:1px solid #f5f5f5;
+}
+
+ .details .post-info .post-item{
+	display: inline-block;
+	padding:10px;
+	color: #b3b3b3;
+	border-right:1px solid #f5f5f5;
+	font-size:12px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+ .details .post-info a.post-item:first-child{
+	padding-left:0;
+}
+
+ .details .post-info a.post-item:last-child{
+	border-right:1px solid transparent;
+}
+
+ .details .post-info a.post-item i{
+	margin-right: 5px;
+}
+
+ .details p.post-text{
+	font-size:14px;
+	color:#959494;
+	margin-top:20px;
+}
+
+ .post a.read-more-post{
+	color:#8d8d8d;
+	font-size:13px;
+	margin-top:5px;
+}
+
+/* Blog Single */
+
+ .post ul.comments:first-child{
+	width: 100%;
+	height: auto;
+}
+
+ .post .details > ul.comments{
+	margin-top: 40px;
+	padding-top:40px;
+	border-top:1px solid #f6f6f6;
+}
+
+ .post ul.comments li{
+	padding:10px 0 0 110px;
+}
+
+ .post ul.comments li div.comment{
+	margin-bottom:10px;
+}
+
+/* Blog Comment Image */
+
+ .post ul.comments li div.comment .c-image{
+	margin-left:-110px;
+	float: left;
+	width: 80px;
+	height: auto;
+}
+
+ .post ul.comments li div.comment .c-image img{
+	width:100%;
+	height: auto;
+	border-radius: 5px;
+	border:1px solid #f6f6f6;
+}
+
+/* Blog Comment Texts */
+
+ .post ul.comments li div.comment-text{
+	background:#fdfdfd;
+	padding:25px;
+	border-radius: 10px;
+	position: relative;
+}
+
+ .post ul.comments li div.comment-text:after{
+	content: '';
+	position: absolute;
+	left: -12px;
+	right: auto;
+	top: 30px;
+	display: block;
+	border-right: 12px solid;
+	border-right-color: #fdfdfd;
+	border-left: none;
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+}
+
+ .post ul.comments li div.comment h1.comment-name{
+	font-size:24px;
+	color:#696969;
+	margin:0;
+	padding: 0;
+}
+
+ .post ul.comments li div.comment h3.comment-date{
+	font-size:14px;
+	color:#959494;
+	margin:10px 0;
+	padding: 0;
+}
+
+ .post ul.comments li div.comment p{
+	font-size:14px;
+	color:#959494;
+	margin:10px 0;
+	padding: 0;
+}
+
+ .post ul.comments li div.comment-text a.reply-button{
+	position: absolute;
+	right:25px;
+	top:25px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+ .post ul.comments li div.comment-text a.reply-button:hover{
+	color:#6b6b6b;
+}
+.t-center {
+    text-align: center !important;
+}
+.bigger {
+    font-size: 60px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+input[type="submit"] {
+    padding: 5px;
+    font-size: 20px;
+}
+
+/*
+First we prepare the navigation menu bar
+ */
+#perosnal_info_menu {
+	clear: both;
+	display: block;
+	margin: 0 auto 6px;
+	width: 100%;
+}
+
+#main-nav   {
+    min-height: 30px;
+    margin: 0 0 10px; 
+}
+#main-nav ul{
+
+}
+#main-nav li    {
+    display: inline-block;
+    margin: 0; padding: 0;
+    position: relative;
+}
+#main-nav li a  {
+    display: block;
+    line-height: 30px;
+    padding: 0 15px;
+}
+#main-nav .current-menu-item a, #main-nav .current_page_item a, #main-nav a:hover {
+    color: #000;
+    
+}
+
+
+#main-nav ul ul { /* this targets all sub menus */
+    display: none; /* hide all sub menus from view */
+    position: absolute;
+    top: 30px; /* this should be the same height as the top level menu -- height + padding + borders */
+}
+#main-nav ul ul li { /* this targets all submenu items */
+    float: none; /* overwriting our float up above */
+    width: 150px; /* set to the width you want your sub menus to be. This needs to match the value we set below */
+}
+#main-nav ul ul li a { /* target all sub menu item links */
+    padding: 5px 10px; /* give our sub menu links a nice button feel */
+}
+
+#main-nav ul li:hover > ul {
+    display: block; /* show sub menus when hovering over a parent */
+    float:left;
+    margin: 0;
+    padding-left: 15px;
+}
+
+#main-nav ul ul li ul {
+    /* target all second, third, and deeper level sub menus */
+    left: 150px; /* this needs to match the sub menu width set above -- width + padding + borders */
+    top: 0; /* this ensures the sub menu starts in line with its parent item */
+}
+.block-grey{
+	overflow:scroll;
+}
+ul.sub-menu {
+    margin-left: 30px !important;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #fff !important;
+}
+
+
+.resume_wrapper{
+	width: 4064px;
+	left: 0px;
+	display: block;
+}
+
+.resume_owl_item{
+	width: 508px;
+}
+
+.resume_owl_item_1{
+	width: 508px;
+}
+.resume_workowl_carausel{
+	opacity: 1;
+	display: block;
+}
+.work_owl_wrapper{
+	width: 3048px;
+	left: 0px;
+	display: block;
+}
+
+label{
+	width:150px !important;
+	 display:inline-block !important;
+}
+
+.resume-owl-item{
+	width: 508px;
+}
+
+.work-slide-owl-wrapper{
+	width: 3048px; 
+	left: 0px; 
+	display: block;
+}
+
+.work-slidr-title{
+	width: 508px;
+}
+.work-slide-owl-theme{
+	opacity: 1; 
+	display: block;
+}

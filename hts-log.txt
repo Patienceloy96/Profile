@@ -1,0 +1,45 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 14 Sep 2018 16:23:37 at http://localhost/nakiranda/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://localhost/nakiranda/ -O1 "C:\My Web Sites\Patience" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:24:10	Error: 	"Method Not Allowed" (405) at link localhost/nakiranda/xmlrpc.php (from localhost/nakiranda/)
+16:25:16	Error: 	"Not Found" (404) at link localhost/nakiranda/+256701686219 (from localhost/nakiranda/)
+16:25:16	Error: 	"Not Found" (404) at link localhost/nakiranda/npatienceloy@gmail.com (from localhost/nakiranda/)
+16:25:16	Error: 	"Not Found" (404) at link localhost/nakiranda/Kampala Uganda (from localhost/nakiranda/)
+16:25:16	Error: 	"Not Found" (404) at link localhost/nakiranda/wp-content/themes/personal-info/fonts/glyphicons-halflings-regular.eot (from localhost/nakiranda/wp-content/themes/personal-info/css/all.css?ver=4.9.8)
+16:25:16	Error: 	"Not Found" (404) at link localhost/nakiranda/wp-content/themes/personal-info/fonts/glyphicons-halflings-regular.eot? (from localhost/nakiranda/wp-content/themes/personal-info/css/all.css?ver=4.9.8)
+16:25:16	Error: 	"Not Found" (404) at link localhost/nakiranda/wp-content/themes/personal-info/fonts/glyphicons-halflings-regular.woff2 (from localhost/nakiranda/wp-content/themes/personal-info/css/all.css?ver=4.9.8)
+16:25:16	Error: 	"Not Found" (404) at link localhost/nakiranda/wp-content/themes/personal-info/fonts/glyphicons-halflings-regular.woff (from localhost/nakiranda/wp-content/themes/personal-info/css/all.css?ver=4.9.8)
+16:25:16	Error: 	"Not Found" (404) at link localhost/nakiranda/wp-content/themes/personal-info/fonts/glyphicons-halflings-regular.ttf (from localhost/nakiranda/wp-content/themes/personal-info/css/all.css?ver=4.9.8)
+16:25:16	Error: 	"Not Found" (404) at link localhost/nakiranda/wp-content/themes/personal-info/fonts/glyphicons-halflings-regular.svg (from localhost/nakiranda/wp-content/themes/personal-info/css/all.css?ver=4.9.8)
+16:25:16	Error: 	"Not Found" (404) at link localhost/nakiranda/wp-content/themes/personal-info/css/grabbing.png (from localhost/nakiranda/wp-content/themes/personal-info/css/all.css?ver=4.9.8)
+16:25:17	Error: 	"Not Found" (404) at link localhost/nakiranda/wp-content/themes/personal-info/css/AjaxLoader.gif (from localhost/nakiranda/wp-content/themes/personal-info/css/all.css?ver=4.9.8)
+16:25:17	Error: 	"Not Found" (404) at link localhost/nakiranda/wp-content/themes/personal-info/img/close.svg (from localhost/nakiranda/wp-content/themes/personal-info/css/all.css?ver=4.9.8)
+16:25:17	Error: 	"Not Found" (404) at link localhost/nakiranda/wp-content/themes/personal-info/img/loading.gif (from localhost/nakiranda/wp-content/themes/personal-info/css/all.css?ver=4.9.8)
+16:25:27	Warning: 	Moved Permanently for localhost/nakiranda/?p=5
+16:25:27	Warning: 	File has moved from localhost/nakiranda/?p=5 to http://localhost/nakiranda/about-me/
+16:25:27	Error: 	"Not Found" (404) at link localhost/nakiranda/about-me/+256701686219 (from localhost/nakiranda/about-me/)
+16:25:27	Error: 	"Not Found" (404) at link localhost/nakiranda/about-me/npatienceloy@gmail.com (from localhost/nakiranda/about-me/)
+16:25:27	Error: 	"Not Found" (404) at link localhost/nakiranda/about-me/Kampala Uganda (from localhost/nakiranda/about-me/)
+16:25:27	Warning: 	Moved Permanently for localhost/nakiranda/?p=175
+16:25:27	Warning: 	File has moved from localhost/nakiranda/?p=175 to http://localhost/nakiranda/education-background/
+16:25:27	Error: 	"Not Found" (404) at link localhost/nakiranda/education-background/+256701686219 (from localhost/nakiranda/education-background/)
+16:25:27	Error: 	"Not Found" (404) at link localhost/nakiranda/education-background/npatienceloy@gmail.com (from localhost/nakiranda/education-background/)
+16:25:28	Error: 	"Not Found" (404) at link localhost/nakiranda/education-background/Kampala Uganda (from localhost/nakiranda/education-background/)
+16:25:28	Warning: 	Moved Permanently for localhost/nakiranda/?p=159
+16:25:28	Warning: 	File has moved from localhost/nakiranda/?p=159 to http://localhost/nakiranda/experience1/
+16:25:28	Error: 	"Not Found" (404) at link localhost/nakiranda/experience1/+256701686219 (from localhost/nakiranda/experience1/)
+16:25:28	Error: 	"Not Found" (404) at link localhost/nakiranda/experience1/npatienceloy@gmail.com (from localhost/nakiranda/experience1/)
+16:25:28	Error: 	"Not Found" (404) at link localhost/nakiranda/experience1/Kampala Uganda (from localhost/nakiranda/experience1/)
+16:25:28	Warning: 	Moved Permanently for localhost/nakiranda/?p=7
+16:25:28	Warning: 	File has moved from localhost/nakiranda/?p=7 to http://localhost/nakiranda/contact-me/
+16:25:28	Error: 	"Not Found" (404) at link localhost/nakiranda/contact-me/+256701686219 (from localhost/nakiranda/contact-me/)
+16:25:28	Error: 	"Not Found" (404) at link localhost/nakiranda/contact-me/npatienceloy@gmail.com (from localhost/nakiranda/contact-me/)
+16:25:28	Error: 	"Not Found" (404) at link localhost/nakiranda/contact-me/Kampala Uganda (from localhost/nakiranda/contact-me/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 51 seconds : 125 links scanned, 94 files written (2055226 bytes overall) [2542831 bytes received at 22908 bytes/sec], 6.2 requests per connection
+(26 errors, 8 warnings, 0 messages)
